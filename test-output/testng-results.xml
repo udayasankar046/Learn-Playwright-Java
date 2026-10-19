@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-19T23:05:52 IST" name="Suite1" finished-at="2026-10-19T23:06:16 IST" duration-ms="24248">
+    <groups>
+    </groups>
+    <test started-at="2026-10-19T23:05:52 IST" name="BaseTests" finished-at="2026-10-19T23:06:16 IST" duration-ms="24248">
+      <class name="Tests.LoginPage1">
+        <test-method is-config="true" signature="launchBrowser(java.lang.reflect.Method)[pri:0, instance:Tests.LoginPage1@481a996b]" started-at="2026-10-19T23:06:03 IST" name="launchBrowser" finished-at="2026-10-19T23:06:06 IST" duration-ms="2386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Tests.LoginPage1.test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="test()[pri:0, instance:Tests.LoginPage1@481a996b]" started-at="2026-10-19T23:06:06 IST" name="test" finished-at="2026-10-19T23:06:10 IST" duration-ms="3978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="teardownBrowser(org.testng.ITestResult)[pri:0, instance:Tests.LoginPage1@481a996b]" started-at="2026-10-19T23:06:10 IST" name="teardownBrowser" finished-at="2026-10-19T23:06:10 IST" duration-ms="642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=LoginPage1.test()[pri:0, instance:Tests.LoginPage1@481a996b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- Tests.LoginPage1 -->
+      <class name="Tests.LoginPage2">
+        <test-method is-config="true" signature="launchBrowser(java.lang.reflect.Method)[pri:0, instance:Tests.LoginPage2@3d51f06e]" started-at="2026-10-19T23:06:10 IST" name="launchBrowser" finished-at="2026-10-19T23:06:12 IST" duration-ms="2253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Tests.LoginPage2.Login()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="Login()[pri:0, instance:Tests.LoginPage2@3d51f06e]" started-at="2026-10-19T23:06:12 IST" name="Login" finished-at="2026-10-19T23:06:13 IST" duration-ms="77" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='net::ERR_ADDRESS_UNREACHABLE at https://opensource-demo.orangehrmlive.com/web/auth/
+  name='Error
+  stack='Error: net::ERR_ADDRESS_UNREACHABLE at https://opensource-demo.orangehrmlive.com/web/auth/
+    at _FrameSession._navigate (C:\Users\CODEBO~1\AppData\Local\Temp\playwright-java-2597586141438820046\package\lib\coreBundle.js:37701:17)
+    at async _Frame.gotoImpl (C:\Users\CODEBO~1\AppData\Local\Temp\playwright-java-2597586141438820046\package\lib\coreBundle.js:23621:28)
+}
+Call log:
+-   - navigating to "https://opensource-demo.orangehrmlive.com/web/auth/", waiting until "load"
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='net::ERR_ADDRESS_UNREACHABLE at https://opensource-demo.orangehrmlive.com/web/auth/
+  name='Error
+  stack='Error: net::ERR_ADDRESS_UNREACHABLE at https://opensource-demo.orangehrmlive.com/web/auth/
+    at _FrameSession._navigate (C:\Users\CODEBO~1\AppData\Local\Temp\playwright-java-2597586141438820046\package\lib\coreBundle.js:37701:17)
+    at async _Frame.gotoImpl (C:\Users\CODEBO~1\AppData\Local\Temp\playwright-java-2597586141438820046\package\lib\coreBundle.js:23621:28)
+}
+Call log:
+-   - navigating to "https://opensource-demo.orangehrmlive.com/web/auth/", waiting until "load"
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:58)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:429)
+at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:971)
+at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:44)
+at com.microsoft.playwright.Page.navigate(Page.java:5759)
+at Tests.LoginPage2.Login(LoginPage2.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='net::ERR_ADDRESS_UNREACHABLE at https://opensource-demo.orangehrmlive.com/web/auth/
+  name='Error
+  stack='Error: net::ERR_ADDRESS_UNREACHABLE at https://opensource-demo.orangehrmlive.com/web/auth/
+    at _FrameSession._navigate (C:\Users\CODEBO~1\AppData\Local\Temp\playwright-java-2597586141438820046\package\lib\coreBundle.js:37701:17)
+    at async _Frame.gotoImpl (C:\Users\CODEBO~1\AppData\Local\Temp\playwright-java-2597586141438820046\package\lib\coreBundle.js:23621:28)
+}
+Call log:
+-   - navigating to "https://opensource-demo.orangehrmlive.com/web/auth/", waiting until "load"
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:278)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:230)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="teardownBrowser(org.testng.ITestResult)[pri:0, instance:Tests.LoginPage2@3d51f06e]" started-at="2026-10-19T23:06:13 IST" name="teardownBrowser" finished-at="2026-10-19T23:06:13 IST" duration-ms="813" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=FAILURE method=LoginPage2.Login()[pri:0, instance:Tests.LoginPage2@3d51f06e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+        <test-method is-config="true" signature="launchBrowser(java.lang.reflect.Method)[pri:0, instance:Tests.LoginPage2@3d51f06e]" started-at="2026-10-19T23:06:13 IST" name="launchBrowser" finished-at="2026-10-19T23:06:16 IST" duration-ms="2329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Tests.LoginPage2.SkipLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="SkipLogin()[pri:0, instance:Tests.LoginPage2@3d51f06e]" started-at="2026-10-19T23:06:16 IST" name="SkipLogin" finished-at="2026-10-19T23:06:16 IST" duration-ms="4" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skippting this test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skippting this test
+at Tests.LoginPage2.SkipLogin(LoginPage2.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SkipLogin -->
+        <test-method is-config="true" signature="teardownBrowser(org.testng.ITestResult)[pri:0, instance:Tests.LoginPage2@3d51f06e]" started-at="2026-10-19T23:06:16 IST" name="teardownBrowser" finished-at="2026-10-19T23:06:16 IST" duration-ms="576" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SkipLogin status=SKIP method=LoginPage2.SkipLogin()[pri:0, instance:Tests.LoginPage2@3d51f06e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- Tests.LoginPage2 -->
+      <class name="Tests.FirstTest">
+        <test-method is-config="true" signature="launchBrowser(java.lang.reflect.Method)[pri:0, instance:Tests.FirstTest@5a63f509]" started-at="2026-10-19T23:05:52 IST" name="launchBrowser" finished-at="2026-10-19T23:06:00 IST" duration-ms="8168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Tests.FirstTest.navigateUrl()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="navigateUrl()[pri:0, instance:Tests.FirstTest@5a63f509]" started-at="2026-10-19T23:06:00 IST" name="navigateUrl" finished-at="2026-10-19T23:06:01 IST" duration-ms="1200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateUrl -->
+        <test-method is-config="true" signature="teardownBrowser(org.testng.ITestResult)[pri:0, instance:Tests.FirstTest@5a63f509]" started-at="2026-10-19T23:06:01 IST" name="teardownBrowser" finished-at="2026-10-19T23:06:03 IST" duration-ms="1667" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateUrl status=SUCCESS method=FirstTest.navigateUrl()[pri:0, instance:Tests.FirstTest@5a63f509] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- Tests.FirstTest -->
+    </test> <!-- BaseTests -->
+  </suite> <!-- Suite1 -->
+</testng-results>

@@ -1,0 +1,28 @@
+# Ignore build output directories
+/bin/
+/build/
+
+# Ignore Eclipse project files
+.classpath
+.project
+.settings/
+
+# Ignore Java-specific files
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Maven/Gradle build directories
+target/
+.gradle/
